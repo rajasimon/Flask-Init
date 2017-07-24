@@ -1,2 +1,2 @@
 # flask-init
-Initialise your Flask Project
+Easy way to create Flask Web application

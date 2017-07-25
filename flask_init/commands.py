@@ -10,13 +10,13 @@ def cli():
     env = Environment(loader=PackageLoader('flask_init', 'templates'))
 
     # Get the templates
-    template = env.get_template('app.py.tpl')
+    template = env.get_template('app.py-tpl')
 
     # Apply context
     parsed_template = template.render()
 
     # Remove tpl in the name
-    file_name = template.name.split('.tpl')[0]
+    file_name = template.name.split('-tpl')[0]
     with open(file_name, "w") as f:
         f.write(parsed_template + '\n')
 

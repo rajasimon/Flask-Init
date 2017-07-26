@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Flask-Init's documentation!
+Flask-Init!
 ======================================
 
 **Flask-Init** extension provides support for creating Flask application with ease. 
@@ -31,6 +31,6 @@ commands that can able to create Flask application for you.
 API
 ----
 
-.. module:: flask_init.commands
+.. module:: flask_init.commands.cli
 
-.. autofunction:: cli
+.. autofunction:: flask_init.commands.cli

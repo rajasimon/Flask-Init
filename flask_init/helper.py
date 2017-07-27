@@ -28,6 +28,8 @@ def creator(project_type, project_path):
         
         # Create folder if no folder in that distination folder
         # https://stackoverflow.com/a/12517490/3762142
-        os.makedirs(os.path.dirname(distination_file), exist_ok=True)
+        if not os.path.exists(os.path.dirname(distination_file)):
+            os.makedirs(os.path.dirname(distination_file))
+
         with open(distination_file, "w") as f:
             f.write(parsed_template + '\n')

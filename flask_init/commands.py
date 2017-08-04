@@ -16,7 +16,10 @@ single_module_name = 'templates/single_module'
 @click.option('--blueprints', is_flag=True)
 def cli(project_name, simple, single_module, package, blueprints):
     """
-    Easy way to create Flask Web application.
+    Easy way to create Flask Web application. You can use below option with flask init::
+        
+        --simple-module
+        --single-module
     """
     project_path = None
 

@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Flask-Init's documentation!
+Flask-Init!
 ======================================
 
 **Flask-Init** extension provides support for creating Flask application with ease. 
@@ -28,9 +28,18 @@ commands that can able to create Flask application for you.
 
     $ flask init
 
-API
-----
+Options
+-------
 
-.. module:: flask_init.commands
+.. code-block:: sh
 
-.. autofunction:: cli
+  --simple
+
+Very simple flask application. Contains only one url endpoint that prints `Hello World`
+
+.. code-block:: sh
+
+  --single-module
+
+This is great for quick projects (like the ones used for tutorials), 
+where you just need to serve a few routes and you’ve got less than a few hundred lines of application code.
